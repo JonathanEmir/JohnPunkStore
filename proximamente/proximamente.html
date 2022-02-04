@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="proximamente.css">
+</head>
+
+<body>
+
+
+    <div class="loader">
+        <div></div>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../products/products.html">
+                <h6><span class="badge bg-danger">JohnPunk Store</span></h6>
+            </a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="countdown">
+
+            <div class="box">
+                <span class="num">...</span>
+                <span class="text">Proximamente</span>
+            </div>
+
+            <div class="box">
+                <span class="num" id="day-box">00</span>
+                <span class="text">Days</span>
+            </div>
+            <div class="box">
+                <span class="num" id="hr-box">00</span>
+                <span class="text">Hours</span>
+            </div>
+            <div class="box">
+                <span class="num" id="min-box">00</span>
+                <span class="text">Minutes</span>
+            </div>
+            <div class="box">
+                <span class="num" id="sec-box">00</span>
+                <span class="text">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="proximamente.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut(1000)
+            $(".content").fadeIn(1000)
+        })
+    </script>
+</body>
+
+</html>
